@@ -1,0 +1,77 @@
+body {
+    padding: 0;
+    margin: 0;
+    /*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5HN6UpmSLT72iZnk7yBpsH2hat3PM-L3vAg&s);
+    */
+    background-color:  #008080;
+
+}
+
+.menu {
+    background-image: linear-gradient(90deg,  #010081, #0503ff);
+    margin: 0; /* Removendo os padrões do Navegador */
+    padding: 0; /* Removendo os padrões do Navegador */
+    list-style: none; /* Removendo os padrões do Navegador */
+    /*background-color:  #c3c3c3 ;*/
+    border-radius: 5px; /*Arredonda a borda*/
+    border-color:  black;
+
+
+}
+
+.menu li {
+    float: left;
+    position: relative;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #c3c3c3;
+    padding: 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #189fff99;
+    
+} 
+
+.menu li ul{
+    background-image: linear-gradient(90deg,  #010081, #0503ff);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color:  #818181 ;
+    display: none;
+    border: 1px solid black;
+    border-radius: 5px; /*Arredonda a borda*/
+    box-shadow: 2px 2px 6px;
+    border-color:  black;
+    display: none;
+
+}
+
+.menu li:hover > ul{
+    display: block;
+} 
+
+.menu li ul li{ 
+    float: none;
+    margin-left: 0;
+}
+
+.menu li ul li{ 
+    top: 0;
+    left: 100%;
+}
+
+
+.menu li ul:hover li{ 
+    float: none;
+    margin-left: 0;
+}
+
+.fix {
+    clear: both;
+}
